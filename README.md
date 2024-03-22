@@ -28,6 +28,10 @@ and add the theme to the bottom of the text file
 ```
 GRUB_THEME="/usr/share/grub/themes/netruner/theme.txt"
 ```
+make sure to coment the console option 
+```
+#GRUB_TERMINAL_OUTPUT="console"
+```
 
 3. Update grub2\
 on Ubuntu\
