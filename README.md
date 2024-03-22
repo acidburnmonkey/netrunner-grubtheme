@@ -17,7 +17,7 @@ all done!
 1.copy netruner into grub themes directory
  
 ``` 
-sudo cp netruner  /usr/share/grub/themes 
+sudo cp -r netruner  /usr/share/grub/themes 
 ```
 
 2. Edit grub file 
