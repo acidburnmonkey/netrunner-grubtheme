@@ -42,6 +42,12 @@ On Fedora
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 ```
+## For LUKS users
+Remember to change the theme location to the unencrypted part of your drive since grub loads before decryption happens for example :
+```
+sudo cp -r netruner  /boot/grub2/themes 
+```
+
 ##
 Your donations will help WingsOfRedemption's wife buy new shoes lamao
 
