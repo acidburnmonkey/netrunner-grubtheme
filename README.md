@@ -1,4 +1,4 @@
-# netruner-grub2 theme
+# netrunner-grub2 theme
 This is a theme for grub2 
 
 ![](demo.png)
