@@ -47,6 +47,10 @@ Remember to change the theme location to the unencrypted part of your drive sinc
 ```
 sudo cp -r netruner  /boot/grub2/themes 
 ```
+Adjust the grub file acordingly
+```
+GRUB_THEME="/boot/grub2/themes/netruner/theme.txt"
+```
 
 ##
 Your donations will help WingsOfRedemption's wife buy new shoes lamao
