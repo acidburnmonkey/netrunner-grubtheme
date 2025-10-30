@@ -7,16 +7,16 @@ THEME_DIR="/usr/share/grub/themes"
 THEME_NAME=netruner
 
 
-CDEF=" \033[0m"                                     
-CCIN=" \033[0;36m"                                  
-CGSC=" \033[0;32m"                                  
-CRER=" \033[0;31m"                                  
-CWAR=" \033[0;33m"                                  
-b_CDEF=" \033[1;37m"                                
-b_CCIN=" \033[1;36m"                                
-b_CGSC=" \033[1;32m"                                
-b_CRER=" \033[1;31m"                                
-b_CWAR=" \033[1;33m"                                
+CDEF=" \033[0m"
+CCIN=" \033[0;36m"
+CGSC=" \033[0;32m"
+CRER=" \033[0;31m"
+CWAR=" \033[0;33m"
+b_CDEF=" \033[1;37m"
+b_CCIN=" \033[1;36m"
+b_CGSC=" \033[1;32m"
+b_CRER=" \033[1;31m"
+b_CWAR=" \033[1;33m"
 
 
 prompt () {
@@ -38,7 +38,7 @@ prompt () {
 # welcome message
 prompt -s "\n\t  ${THEME_NAME} - Grub2-Theme  \n\t"
 
-# check command avalibility
+# check command availability
 function has_command() {
   command -v $1 > /dev/null
 }
@@ -82,15 +82,15 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
     fi
   fi
 
-  # success 
+  # success
   prompt -s "\n\t  Successfully Installed  \t\n"
 
 else
 
-  # error 
+  # error
   prompt -e "\n [ Error! ]  Must execute as root "
 
-  
+
   read -p "[ trusted ] specify the root password : " -t${MAX_DELAY} -s
   [[ -n "$REPLY" ]] && {
     sudo -S <<< $REPLY $0

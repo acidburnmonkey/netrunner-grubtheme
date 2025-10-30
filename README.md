@@ -1,26 +1,26 @@
 # netrunner-grub2 theme
-This is a theme for grub2 
+This is a theme for grub2
 
 ![](demo.png)
 
 
 ![](iconsdemo.png)
 
-## Installation on Fedora & Ubuntu  
+## Installation on Fedora & Ubuntu
 ```
 sudo chmod +x install.sh
 sudo ./install.sh
 ```
 all done!
 
-## Manual Installation 
+## Manual Installation
 1.copy netruner into grub themes directory
- 
-``` 
-sudo cp -r netruner  /usr/share/grub/themes 
+
+```
+sudo cp -r netruner  /usr/share/grub/themes
 ```
 
-2. Edit grub file 
+2. Edit grub file
 ```
 sudo vim /etc/default/grub
 ```
@@ -28,7 +28,7 @@ and add the theme to the bottom of the text file
 ```
 GRUB_THEME="/usr/share/grub/themes/netruner/theme.txt"
 ```
-make sure to coment the console option 
+make sure to comment the console option
 ```
 #GRUB_TERMINAL_OUTPUT="console"
 ```
@@ -37,7 +37,7 @@ make sure to coment the console option
 on Ubuntu\
 ``` sudo update-grub ```
 
-On Fedora 
+On Fedora
 ```
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
@@ -45,23 +45,21 @@ sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 ## For LUKS users
 Remember to change the theme location to the unencrypted part of your drive since grub loads before decryption happens for example :
 ```
-sudo cp -r netruner  /boot/grub2/themes 
+sudo mkdir -p /boot/grub2/themes
+sudo cp -r netruner  /boot/grub2/themes
 ```
-Adjust the grub file acordingly
+Adjust the grub file accordingly
 ```
 GRUB_THEME="/boot/grub2/themes/netruner/theme.txt"
 ```
 
 ##
-Your donations will help WingsOfRedemption's wife buy new shoes lamao
-
 <a href="https://www.buymeacoffee.com/acidburn" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## Monero <img src="https://www.getmonero.org/press-kit/symbols/monero-symbol-1280.png" width="60" height="60">
 43Sxiso2FHsYhP7HTqZgsXa3m3uHtxHQdMeHxECqRefyazZfpGVCLVsf1gU68jxJBo1G171AC181q1BqAUaG1m554MLsspG
 
 ## Bitcon <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" width="60" height="60">
-<img src="https://lh3.googleusercontent.com/pw/AJFCJaVUsxqiheJBMWH1azt3kO00SdVw-hnJ8brWx1RNf-JozK_yy2-ZXwLpCEDeKePfp78I5Ca63I3A0TWujiMqydrdygMsmujaOvNp-OqZUwafXyleDKbD-enEg75WweataJivtVJmCenNvuIpBzq51mc=w352-h355-s-no?authuser=0" width="150" height="150">
 
 bc1qk06cyheffclx7x434zpxjzcdl50452r9ducw0x
 
